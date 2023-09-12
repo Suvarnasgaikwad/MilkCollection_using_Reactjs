@@ -6,8 +6,20 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+.bg {
+  height: 100%;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+header {
+	margin: 1px;
+	background-color: #b921e7;
+	padding: 10px;
+	text-align: center;
+	font-size: 25px;
+	color: rgb(17, 14, 14);
+	border-style: double;
 }
