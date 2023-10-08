@@ -1,7 +1,10 @@
 import "./App.css";
+
 import Sidebar from "./components/sideBar";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+import { FarmerList } from "./pages/FarmerList";
+import { Registration } from "./components/Registration";
+import { MilkCollection } from "./pages/MilkCollection";
 import { Home, OurAim, OurVision } from "./pages/Home";
 import {
 Services,
@@ -20,6 +23,9 @@ return (
 	<Routes>
 	 
 		<Route path='/home' element={<Home/>} />
+		<Route path='/reg' element={<Registration/>} />
+		<Route path='/farm' element={<FarmerList/>} />
+		<Route path='/colect' element={<MilkCollection/>} />
 		<Route path='/home/aim' element={<OurAim/>} />
 		<Route path='/home/vision' element={<OurVision/>} />
 		<Route path='/services' element={<Services/>} />

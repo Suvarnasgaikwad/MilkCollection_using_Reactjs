@@ -1,16 +1,18 @@
 import React from "react";
 import * as FaIcons from "react-icons/fa";
-import * as AiIcons from "react-icons/ai";
+//import * as AiIcons from "react-icons/ai";
 import * as IoIcons from "react-icons/io";
 import * as RiIcons from "react-icons/ri";
-
+import { IoMdHome } from "react-icons/io";
+import {SlUser} from "react-icons/sl";
+import { IoMdBook } from "react-icons/io";
+import { IoMdBicycle } from "react-icons/io";
 export const SidebarData = [
 {
 	title: "Home",
 	path: "/home",
-	icon: <AiIcons.AiFillHome />,
-	iconClosed: <RiIcons.RiArrowDownSFill />,
-	iconOpened: <RiIcons.RiArrowUpSFill />,
+	icon:<IoMdHome/>,
+	
 
 	subNav: [
 	{
@@ -24,6 +26,27 @@ export const SidebarData = [
 		icon: <IoIcons.IoIosPaper />,
 	},
 	],
+},
+{
+	title:"Registration",
+	path:"/reg",
+	icon: <SlUser/>,
+	iconClosed: <RiIcons.RiArrowDownSFill />,
+	iconOpened: <RiIcons.RiArrowUpSFill />,
+},
+{
+	title:"Farmer List",
+	path:"/farm",
+	icon: <IoMdBook/>,
+	iconClosed: <RiIcons.RiArrowDownSFill />,
+	iconOpened: <RiIcons.RiArrowUpSFill />,
+},
+{
+	title:"Milk Collection",
+	path:"/colect",
+	icon: < IoMdBicycle/>,
+	iconClosed: <RiIcons.RiArrowDownSFill />,
+	iconOpened: <RiIcons.RiArrowUpSFill />,
 },
 {
 	title: "Services",

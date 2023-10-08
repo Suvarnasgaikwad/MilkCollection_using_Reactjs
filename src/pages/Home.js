@@ -3,7 +3,8 @@ import React from "react";
 export const Home = () => {
 return (
 	<div className="home">
-	<h1>GeeksforGeeks About us</h1>
+	
+	<h1>Milk Collection  About us</h1>
 	</div>
 );
 };
@@ -11,7 +12,7 @@ return (
 export const OurAim = () => {
 return (
 	<div className="home">
-	<h1>GeeksforGeeks Aim</h1>
+	<h1> Milk Collection Aim</h1>
 	</div>
 );
 };
@@ -19,7 +20,7 @@ return (
 export const OurVision = () => {
 return (
 	<div className="home">
-	<h1>GeeksforGeeks Vision</h1>
+	<h1>Milk Collection </h1>
 	</div>
 );
 };

@@ -7,6 +7,8 @@ import { SidebarData } from "./sideBardata";
 import SubMenu from "./subMenu";
 import { IconContext } from "react-icons/lib";
 
+
+
 const Nav = styled.div`
 background:#023958;
 height: 80px;
@@ -22,6 +24,9 @@ height: 80px;
 display: flex;
 justify-content: flex-start;
 align-items: center;
+
+
+
 `;
 
 const SidebarNav = styled.nav`
@@ -35,6 +40,11 @@ top: 0;
 left: ${({ sidebar }) => (sidebar ? "0" : "-100%")};
 transition: 350ms;
 z-index: 10;
+@media (max-width: 768px) {
+    
+}
+
+
 `;
 
 const SidebarWrap = styled.div`
@@ -43,7 +53,7 @@ width: 100%;
 
 const Sidebar = () => {
     const [sidebar, setSidebar] = useState(false);
-
+ 
     const showSidebar = () => setSidebar(!sidebar);
 
     return (
@@ -55,12 +65,16 @@ const Sidebar = () => {
                     </NavIcon>
                     <h1
                         style={{
+                            
                             textAlign: "center",
-                            marginLeft: "600px",
-                            color: "white"
+                            marginLeft: "700px",
+                            color: "white",
+                        
+                            
                         }}
+                      
                     >
-                            Pruthvi Milk Collection Ozewadi
+                           Pruthvi Milk Collection and Collection 
                     </h1>
                 </Nav>
                 <SidebarNav sidebar={sidebar}>
